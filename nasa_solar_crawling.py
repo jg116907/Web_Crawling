@@ -17,7 +17,7 @@ for line in rdr:
     a_list.append(line)
 f.close() 
 
-class TestWedonttalkanymore():
+class TestSolar():
   def setup_method(self):
     self.driver = webdriver.Chrome('/mnt/c/work/chromedriver.exe')
     self.vars = {}
@@ -32,7 +32,7 @@ class TestWedonttalkanymore():
     if len(wh_now) > len(wh_then):
       return set(wh_now).difference(set(wh_then)).pop()
   
-  def test_wedonttalkanymore(self):
+  def test_solar(self):
     self.driver.get("https://power.larc.nasa.gov/data-access-viewer/")
     #self.driver.find_element(By.LINK_TEXT,"확인").click()
     # self.driver.find_element(By.LINK_TEXT,"확인").click()
@@ -114,6 +114,6 @@ class TestWedonttalkanymore():
       actions.move_to_element(element).release().perform()
       if count>5:
         return
-ts = TestWedonttalkanymore()
+ts = TestSolar()
 ts.setup_method()
-ts.test_wedonttalkanymore() 
+ts.test_solar() 
