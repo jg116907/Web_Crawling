@@ -1,7 +1,7 @@
 # Web_Crawling
 
 ## 목표
-서울의 일사량 데이터 및 고도, 습도 데이터 NASA POWER 사이트를 Web crawling 한다.
+서울의 일사량 데이터 및 고도, 습도 데이터를 추출하기 위해 NASA POWER 사이트를 Web crawling 한다.
 
 ## 사용 package
 1. selenium
